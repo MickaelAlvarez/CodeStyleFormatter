@@ -7,6 +7,7 @@ import formatter.StyleFormatter;
 import parser.OptionFileParser;
 
 public class Main {
+	// Purge equinox
 
 	public static void main(String[] args) {
 		String source = "public enum X { A,B,C,D,E,F}; private static String pouette = null;";
