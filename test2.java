@@ -29,12 +29,12 @@ public class StyleFormatter {
 	}
 
 	private TextEdit getFormatter(String source) {
-		return codeFormatter.format(CodeFormatter.K_COMPILATION_UNIT, // format a compilation unit
-				source, // source to format
-				0, // starting position
-				source.length(), // length
-				0, // initial indentation
-				System.getProperty("line.separator") // line separator
+		return codeFormatter.format(CodeFormatter.K_COMPILATION_UNIT,
+				source,
+				0,
+				source.length(),
+				0,
+				System.getProperty("line.separator")
 		);
 	}
 

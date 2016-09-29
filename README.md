@@ -2,4 +2,4 @@
 
 Bugs
 -
-> Les "// TODO..." font planter le programme  
+> Les commentaires en général font planter le programme ou le formattage  
