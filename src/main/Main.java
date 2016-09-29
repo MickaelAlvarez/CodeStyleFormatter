@@ -31,6 +31,7 @@ public class Main {
 			StyleFormatter formatter = new StyleFormatter(parser.parse());
 
 			for(String filePath : filesToFormatPaths) {
+				System.out.println(filePath);
 				try {
 					System.out.println(formatter.apply(filePath).get());
 				} catch (MalformedTreeException | BadLocationException e) {
