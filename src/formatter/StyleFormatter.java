@@ -50,7 +50,7 @@ public class StyleFormatter {
 	    String line = br.readLine();
 
 	    while (line != null) {
-		sb.append(line);
+		sb.append(line + "\n");
 		line = br.readLine();
 	    }
 

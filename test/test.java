@@ -9,26 +9,35 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListFileNameParser {
-          public static List<String> parse(File file) {
-                    ArrayList<String> listFile = new ArrayList<>();
-                    try {
-                              BufferedReader br = new BufferedReader(
-                                                  new FileReader(file));
-                              StringBuilder sb = new StringBuilder();
-                              String line = br.readLine();
-                              while (line != null) {
-                                        listFile.add(getDataFromLine(line));
-                              }
-                    } catch (FileNotFoundException e) {
-                              e.printStackTrace();
-                    } catch (IOException e) {
-                              e.printStackTrace();
-                    }
-                    return listFile;
-          }
 
-          private static String getDataFromLine(String line) {
-                    String[] lineSplitted = line.split("\\\t");
-                    return lineSplitted[1];
-          }
+	/*
+	 * commentaire
+	 */
+
+	public static List<String> parse(File file) {
+		ArrayList<String> listFile = new ArrayList<>(); // test
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(file));
+			StringBuilder sb = new StringBuilder();
+			String line = br.readLine();
+			while (line != null) {
+				listFile.add(getDataFromLine(line));
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return listFile;
+	}
+
+	/**
+	 * Javadoc
+	 * @param line
+	 * @return
+	 */
+	private static String getDataFromLine(String line) {
+		String[] lineSplitted = line.split("\\\t");
+		return lineSplitted[1];
+	}
 }

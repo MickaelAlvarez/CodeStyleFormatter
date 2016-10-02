@@ -19,7 +19,8 @@ public class Main {
 
 	// parserOptionPath = args[0]; // Used in command line
 	// rootFolderPath = args[1]; // Used in command line
-	parserOptionPath = "test.xml"; // Pour tester
+//	parserOptionPath = "profiles/1/profile1.xml"; // Pour tester
+	parserOptionPath = "profiles/2/profile2.xml"; // Pour tester
 	rootFolderPath = "test"; // Pour tester
 
 	parserOptionFile = new File(parserOptionPath);
